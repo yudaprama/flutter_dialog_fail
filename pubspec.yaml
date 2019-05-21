@@ -1,8 +1,8 @@
 name: dialog_fail
 description: A new Flutter package.
 version: 0.0.1
-author:
-homepage:
+author: Yuda Prma<yudapramad@gmail.com>
+homepage: https://github.com/yudaprama/flutter_dialog_fail.git
 
 environment:
   sdk: ">=2.1.0 <3.0.0"
