@@ -34,3 +34,24 @@ dialogFail(BuildContext context, String content) {
     );
   });
 }
+
+unDismissDialog(BuildContext context, String content, VoidCallback onPressed) {
+  showDialog(
+    context: context,
+    barrierDismissible: false,
+    builder: (BuildContext context) {
+      return WillPopScope(
+        onWillPop: () {},
+        child: new AlertDialog(
+          title: Text(content),
+          actions: <Widget>[
+            FlatButton(
+              onPressed: onPressed,
+              child: new Text('OK'),
+            ),
+          ],
+        ),
+      );
+    },
+  );
+}
